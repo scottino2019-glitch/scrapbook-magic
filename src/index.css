@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;700&family=Pacifico&family=Yellowtail&family=Creepster&family=UnifrakturMaguntia&family=Bungee+Shade&family=Monoton&family=Special+Elite&family=Press+Start+2P&family=Permanent+Marker&display=swap');
+
+@theme {
+  --font-sans: "Fredoka", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-pink: #FFD1D1;
+  --color-brand-bg: #FDF4F5;
+}
+
+/* Hardcoded CSS Patterns to avoid broken image links */
+.pattern-dots {
+  background-color: #ffffff;
+  background-image: radial-gradient(#FFD1D1 2px, transparent 2px);
+  background-size: 20px 20px;
+}
+
+.pattern-wood {
+  background-color: #e5cc7f;
+  background-image: repeating-linear-gradient(90deg, rgba(255,255,255,.07) 0px, rgba(255,255,255,.07) 1px, transparent 1px, transparent 10px),
+                    repeating-linear-gradient(0deg, rgba(255,255,255,.07) 0px, rgba(255,255,255,.07) 1px, transparent 1px, transparent 10px),
+                    linear-gradient(90deg, rgb(139, 107, 72), rgb(160, 126, 88));
+}
+
+.pattern-paper {
+  background-color: #fff;
+  background-image: linear-gradient(90deg, rgba(200,0,0,.05) 50%, transparent 50%),
+                    linear-gradient(rgba(200,0,0,.05) 50%, transparent 50%);
+  background-size: 50px 50px;
+}
+
+.speech-bubble-arrow:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: inherit;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -7.5px;
+  margin-bottom: -15px;
+}
+
+.thought-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 50%;
+}
